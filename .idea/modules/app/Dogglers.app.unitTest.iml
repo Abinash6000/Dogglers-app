@@ -13,6 +13,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/38d1a8dd5cd062029cca3150fd0d0fe5/transformed/jetified-viewbinding-7.2.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/f6dab87c3e0da302a7c44b2bee84e764/transformed/jetified-kotlin-stdlib-jdk8-1.6.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/359cee31a4d0c6a693a306ea06a00a6e/transformed/jetified-fragment-testing-1.4.1-api.jar</arg>
@@ -105,11 +106,6 @@
     <facet type="android" name="Android">
       <configuration>
         <option name="SELECTED_BUILD_VARIANT" value="debug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
-        <afterSyncTasks>
-          <task>generateDebugSources</task>
-        </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
@@ -119,7 +115,9 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugUnitTest/out" />
     <content url="file://$MODULE_DIR$/../../../app/src/test" />
